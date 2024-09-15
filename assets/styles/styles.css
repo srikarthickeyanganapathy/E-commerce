@@ -1,0 +1,496 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #0077b6; /* Primary tech blue */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background-color: #005f99;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #48cae4; /* Light blue background */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: linear-gradient(135deg, #48cae4 0%, #0077b6 100%);
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.banner button {
+    background-color: #ffdd57; /* Yellow button */
+    color: #333;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner button:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+/* Products Section Styles */
+.products-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Product Card Styles */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 270px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Light background */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0077b6; /* Primary blue */
+    font-weight: 600;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #0077b6; /* Primary blue for focus */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #ffdd57; /* Accent yellow */
+    color: #333;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cart-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+#cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.cart-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.cart-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+    background-color: #c82333;
+}
+
+#checkout-button {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#checkout-button:hover {
+    background-color: #e0a800;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recommendations-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+#recommended-products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/* Product Card Styles */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 270px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Description Styling */
+.product-card .hover-description {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75); /* Dark overlay */
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%; /* Initially hidden above the bottom */
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s;
+    z-index: 1;
+}
+
+.product-card:hover .hover-description {
+    opacity: 1;
+    top: 0; /* Slide in over the card */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    z-index: 0;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+    z-index: 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    z-index: 0;
+}
+
+/* Add to Cart Button */
+.product-card button {
+    background-color: #28a745; /* Green for Add to Cart */
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    z-index: 2; /* Ensure button is always clickable */
+    position: relative; /* Avoid the button being affected by hover-description */
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+.centered-gif {
+    display: block;
+    margin: 0 auto; /* Center block-level elements */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #e68a00;
+}
+
+.hero-image img {
+    min-width: 500px;
+}
+
+/* Product Highlights */
+.product-highlights {
+    padding: 60px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-highlights h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    width: 30%;
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}

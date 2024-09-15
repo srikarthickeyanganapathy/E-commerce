@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Robotics Store</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .navbar {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff; /* Adjust color as needed */
+            font-weight: bold;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            gap: 10px; /* Space between the logo and the site name */
+        }
+
+        .logo {
+            height: 60px; /* Adjust the height of the logo as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        .site-name {
+            font-size: 2em; /* Adjust font size as needed */
+            margin: 0;
+            font-family: Arial, sans-serif; /* Choose a suitable font */
+        }
+
+        .banner {
+            text-align: center; /* Center text and inline elements */
+            padding: 20px; /* Add padding if necessary */
+        }
+
+        .gif-section {
+            position: relative;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Hide any overflow */
+        }
+
+        .full-screen-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .footer{
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./assets/images/logo.jfif" alt="Robotic Logo" class="logo">
+            <h1 class="site-name">Robotics Store</h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="products.html" target="_blank">Products</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="cart.html" target="_blank">Cart</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Advanced Robotics Solutions for Every Industry</h1>
+            <p>Empowering your business with cutting-edge robotics technology. Explore our wide range of products to automate and revolutionize your operations.</p>
+            <a href="products.html" target="_blank" class="cta-btn">Explore Our Products</a>
+        </div>
+        <div class="hero-image">
+            <!-- Replace with an image of your products -->
+            <img src="./assets/images/home_photo-transformed.jpeg" alt="Robotics Products">
+        </div>
+    </section>
+
+    <!-- Fullscreen GIF Section -->
+    <section class="gif-section">
+        <img src="https://gizmodo.com/app/uploads/2024/06/4c19d027a10e862dae1444f08840fcf4.gif" alt="Robotics GIF" class="full-screen-gif">
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="banner">
+        <h2>Welcome to the Best Robotics Store</h2>
+        <p>Find your next robotics kit and components here!</p>
+        <button onclick="window.location.href='products.html';">Shop Now</button>
+    </section>
+    
+    <!-- Product Highlights -->
+    <section class="product-highlights">
+        <h2>Top-Rated Robotics Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="./assets/images/industry_robot.jfif" alt="Robot 1">
+                <h3>Industrial Robot X</h3>
+                <p>Precision and power packed into one machine. Automate your production line with the latest industrial robot technology.</p>
+            </div>
+            <div class="product">
+                <img src="./assets/images/Ai_robots.jfif" alt="Robot 2">
+                <h3>AI-Powered Robot Y</h3>
+                <p>AI-powered robots for advanced automation. Ideal for industrial or warehouse use cases.</p>
+            </div>
+            <div class="product">
+                <img src="./assets/images/collab_robot.jfif" alt="Robot 3">
+                <h3>Collaborative Robot Z</h3>
+                <p>Our collaborative robots are designed to work alongside humans safely and effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Robotics Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

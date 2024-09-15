@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Robotics Store</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Robotics Store</h1>
+        <nav class="navbar">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="products.html" target="_blank">Products</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="cart.html" target="_blank">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically generated here -->
+        </div>
+
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="recommendations-section">
+        <h2>Recommended Products</h2>
+        <div id="recommended-products">
+            <!-- Recommended products will be dynamically generated here -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Robotics Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCart();         // Make sure the cart is updated
+            displayRecommendations();  // Load recommendations
+        });
+    </script>
+</body>
+</html>
